@@ -15,7 +15,8 @@ describe "#stock_picker" do
     expect(stock_picker([400, 3, 8, 7])).to_not eq([1, 0])
     expect(stock_picker([44, 73, 90, 27, 123, 22, 53])).to_not eq([6, 5])
   end
-  # expect(stock_picker([44, 3])).to eq([])
-  
 
+  it "should return empty array if losses are options" do
+    expect(stock_picker([44, 3])).to eq([])
+  end
 end
